@@ -19,17 +19,20 @@ console.log(
 window.onload = function () {
   document.getElementById('submit').addEventListener('click', e => {
       e.preventDefault();
-      const text = document.getElementById('comment-content').value;
+      const textValue = document.getElementById('comment-content');
 
       const template = document.querySelector('li');
       if (!template) return;
 
       const newComment = template.cloneNode(true);
 
-      newComment.querySelector('.comment-content').textContent = text;
+      newComment.querySelector('.comment-content').textContent = textValue.value;
+      textValue.value = '';
 
 
       const ulTag = document.querySelector('ul');
       ulTag.appendChild(newComment);
+
+      newComment.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 }
