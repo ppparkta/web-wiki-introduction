@@ -29,8 +29,19 @@
         <section>
           <h3 class="subtitle">나만의 갤러리</h3>
           <article>
-            <h4>기억에 남는 어쩌구</h4>
-            
+            <h4>💻 구구조 노트북 </h4>
+            <div class="gallery-group">
+              <img src="./images/image1.jpeg" alt="헤일러" class="gallery-image" />
+              <img src="./images/image2.jpeg" alt="히스타" class="gallery-image" />
+              <img src="./images/image3.jpeg" alt="포스티" class="gallery-image" />
+              <img src="./images/image4.jpeg" alt="사나" class="gallery-image" />
+              <img src="./images/image5.jpeg" alt="루키" class="gallery-image" />
+              <img src="./images/image6.jpeg" alt="미소" class="gallery-image" />
+              <img src="./images/image7.jpeg" alt="시소" class="gallery-image" />
+              <img src="./images/image8.jpeg" alt="우가" class="gallery-image" />
+              <img src="./images/image9.jpeg" alt="부기" class="gallery-image" />
+            </div> 
+          
           </article>
         </section>
 
@@ -74,12 +85,16 @@
         <section>
           <div class="comment-writing-container">
             <form>
-              <fieldset>
-                <legend>댓글 쓰기</legend>
+              <fieldset class="comment-box">
                 <textarea
                   placeholder="정말 멋진 글이네요. 크루가 감동할 수 있도록 훈훈해지는 댓글 부탁 드립니다."
                 ></textarea>
-              </fieldset>
+              
+              <div class ="button-group">
+                <button type="cancel" class="btn btn-cancel">취소</button>
+                <button type="submit" class="btn btn-primary">등록</button>
+              </div>
+            </fieldset>
             </form>
           </div>
           <ul class="comment-list">

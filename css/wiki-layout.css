@@ -152,3 +152,77 @@ footer p {
   --divider-color: #efefef;
   --font-default-color: #333;
 }
+
+.comment-writing-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-box {
+  padding:0;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  align-items: center;  
+
+  max-width: 800px;  
+  min-width: 300px; 
+
+  border: 1px solid #ddd;
+  background-color: #fff;
+  margin-bottom: 24px;
+}
+
+textarea {
+  width: 100%;     
+  border: none;
+  outline: none;
+  resize: none;      
+  font-size: 14px;
+  height: 40px;  
+  overflow: auto;     
+  padding:0;
+}
+
+textarea::placeholder {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  color: #CCCCCC;
+}
+
+form {
+  margin:0;
+  padding:0;
+}
+
+.button-group {
+  display: flex; 
+}
+
+button{
+  margin: 0;
+  padding:0;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  width: 70px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  min-width: 60px;   
+}
+
+.btn-cancel {
+  background-color: #ddd;
+  color: #000;
+}
+
+.btn-primary {
+  background-color: #e0f7f7;
+  color: #000;
+}

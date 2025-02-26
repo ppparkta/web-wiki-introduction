@@ -1,0 +1,13 @@
+.gallery-group {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(3, 250px);
+    grid-row: 3;
+}
+
+
+.gallery-image{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
