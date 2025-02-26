@@ -16,8 +16,8 @@ console.log(
   "color: #d81b60; font-size: 16px; font-weight: bold;"
 );
 
-window.onload = function () {
 
+document.addEventListener('DOMContentLoaded', ()=>{
   const mainLogo = document.getElementById('main-logo');
 
   const originalSrc = './images/main-logo.png';
@@ -25,8 +25,12 @@ window.onload = function () {
 
   mainLogo.addEventListener('click', (e) =>{
     e.preventDefault();
-    mainLogo.src = mainLogo.src.includes(originalSrc) ? easterEggSrc : originalSrc;
+    
+    mainLogo.src = mainLogo.src.endsWith('main-logo.png') ? easterEggSrc : originalSrc;
   });
+});
+
+window.onload = function () {
 
   document.getElementById('submit').addEventListener('click', e => {
       e.preventDefault();
