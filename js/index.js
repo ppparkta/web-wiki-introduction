@@ -16,4 +16,20 @@ console.log(
   "color: #d81b60; font-size: 16px; font-weight: bold;"
 );
 
-console.log("알맞은 스크립트를 작성하세요");
+window.onload = function () {
+  document.getElementById('submit').addEventListener('click', e => {
+      e.preventDefault();
+      const text = document.getElementById('comment-content').value;
+
+      const template = document.querySelector('li');
+      if (!template) return;
+
+      const newComment = template.cloneNode(true);
+
+      newComment.querySelector('.comment-content').textContent = text;
+
+
+      const ulTag = document.querySelector('ul');
+      ulTag.appendChild(newComment);
+  });
+}
