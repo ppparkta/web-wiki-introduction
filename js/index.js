@@ -17,6 +17,17 @@ console.log(
 );
 
 window.onload = function () {
+
+  const mainLogo = document.getElementById('main-logo');
+
+  const originalSrc = './images/main-logo.png';
+  const easterEggSrc = './images/header-logo.png';
+
+  mainLogo.addEventListener('click', (e) =>{
+    e.preventDefault();
+    mainLogo.src = mainLogo.src.includes(originalSrc) ? easterEggSrc : originalSrc;
+  });
+
   document.getElementById('submit').addEventListener('click', e => {
       e.preventDefault();
       const textValue = document.getElementById('comment-content');
@@ -32,6 +43,8 @@ window.onload = function () {
 
       const ulTag = document.querySelector('ul');
       ulTag.appendChild(newComment);
+
+      alert("댓글이 등록되었습니다");
 
       newComment.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
