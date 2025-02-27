@@ -209,6 +209,8 @@ button{
   padding:0;
 }
 
+
+
 .btn {
   border: none;
   cursor: pointer;
@@ -224,7 +226,17 @@ button{
   color: #000;
 }
 
+.btn-cancel:hover {
+  background-color: rgb(179, 179, 179);
+  color: #000;
+}
+
 .btn-primary {
   background-color: #e0f7f7;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background-color: #94e2e2;
   color: #000;
 }
